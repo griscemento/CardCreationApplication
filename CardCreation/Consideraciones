@@ -1,0 +1,14 @@
+No me fue posible encontrar un cliente de mail que tenga los settings para configurar la seguridad
+completamente abierta, por lo que al intentar enviar un mail, el error "SMTP 535 - Authentication
+failed" aparecía constantemente, lo cual detenía la ejecución de la aplicación.
+Uno de los requerimientos de la aplicación es que se envíe un mail al crear una Tarjeta.
+Esto hará que no funcione "crear una tarjeta" o "Crear una compra", por lo que decidí comentar el
+código de envío de mails en esos casos. De todas maneras, podrán ver que está configurado en el POM
+y los métodos que hacen dicha funcionalidad.
+El código para envío de mails comentado están en las clases:
+PurchaseService, línea 33 - notifyPurchaseToUser()
+CardService, línea 48 - sendCardInformationToUser()
+
+Para probar localmente, creé una carpeta con los curls de postman.
+
+Melany Vinci.

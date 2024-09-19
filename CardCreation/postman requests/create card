@@ -1,0 +1,11 @@
+curl --location 'http://localhost:8080/api/v1/card/saveCard' \
+--header 'Content-Type: application/json' \
+--data '{
+    "brand": "Visa",
+    "personalAccountNumber": 1234567891234567,
+    "ccv": 123,
+    "expirationDate": "01/10/2025",
+    "user": 
+        {"id": 1
+    }
+}'
