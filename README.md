@@ -1,2 +1,2 @@
 # CardCreationApplication
-Card Application
+Ejercicio 2 de challenge para Empresa.
